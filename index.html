@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dental Art &amp; Science | Premium Dental Clinic in F-10 Islamabad</title>
+  <meta
+    name="description"
+    content="Premium dental care in F-10, Islamabad. Book clear aligners, dental implants, root canal therapy, cosmetic dentistry, and teeth whitening directly with Dental Art & Science."
+  >
+  <meta name="theme-color" content="#0F172A">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0F172A",
+            medical: "#0EA5E9",
+            mist: "#F0F9FF",
+            teal: "#14B8A6"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            display: ["Manrope", "sans-serif"]
+          },
+          boxShadow: {
+            luxury: "0 30px 80px -30px rgba(15, 23, 42, 0.25)",
+            card: "0 20px 50px -30px rgba(14, 165, 233, 0.35)"
+          },
+          animation: {
+            "pulse-soft": "pulseSoft 2.5s ease-in-out infinite",
+            float: "float 6s ease-in-out infinite"
+          },
+          keyframes: {
+            pulseSoft: {
+              "0%, 100%": {
+                boxShadow: "0 0 0 0 rgba(14, 165, 233, 0.35)"
+              },
+              "50%": {
+                boxShadow: "0 0 0 10px rgba(14, 165, 233, 0)"
+              }
+            },
+            float: {
+              "0%, 100%": { transform: "translateY(0)" },
+              "50%": { transform: "translateY(-12px)" }
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 5% 8%, rgba(14, 165, 233, 0.08), transparent 25rem),
+        #ffffff;
+    }
+
+    ::selection {
+      color: #ffffff;
+      background: #0ea5e9;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(14, 165, 233, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(14, 165, 233, 0.045) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .image-placeholder {
+      background:
+        radial-gradient(circle at 65% 28%, rgba(255, 255, 255, 0.95), transparent 24%),
+        linear-gradient(145deg, #e0f2fe 0%, #f8fafc 45%, #ccfbf1 100%);
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), transparent 45%);
+      opacity: 0;
+      transition: opacity 300ms ease;
+      pointer-events: none;
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(14, 165, 233, 0.45);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden font-sans text-slate-600 antialiased">
+  <header class="glass sticky top-0 z-50 border-b border-slate-200/70">
+    <nav
+      class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+      aria-label="Primary navigation"
+    >
+      <a href="#home" class="group flex shrink-0 items-center gap-3" aria-label="Dental Art & Science home">
+        <span class="relative grid h-11 w-11 place-items-center rounded-2xl bg-ink text-white shadow-lg shadow-slate-900/15">
+          <i class="fa-solid fa-tooth text-lg" aria-hidden="true"></i>
+          <i class="fa-solid fa-sparkles absolute -right-1 -top-1 text-[10px] text-sky-400" aria-hidden="true"></i>
+        </span>
+
+        <span class="leading-tight">
+          <span class="block font-display text-sm font-extrabold tracking-tight text-ink sm:text-base">
+            Dental Art <span class="text-medical">&amp;</span> Science
+          </span>
+          <span class="block text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
+            F-10 Islamabad
+          </span>
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-8 lg:flex">
+        <a href="#home" class="text-sm font-semibold text-ink transition hover:text-medical">Home</a>
+        <a href="#services" class="text-sm font-semibold text-slate-600 transition hover:text-medical">Services</a>
+        <a href="#doctor" class="text-sm font-semibold text-slate-600 transition hover:text-medical">About Dr. Ayesha</a>
+        <a href="#testimonials" class="text-sm font-semibold text-slate-600 transition hover:text-medical">Testimonials</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a
+          href="https://wa.me/923001234567?text=Hello%20Dental%20Art%20%26%20Science%2C%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="animate-pulse-soft hidden items-center gap-2 rounded-full bg-medical px-5 py-3 text-sm font-bold text-white shadow-lg shadow-sky-500/20 transition hover:-translate-y-0.5 hover:bg-sky-600 sm:inline-flex"
+        >
+          <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+          Book Appointment
+        </a>
+
+        <button
+          id="menuButton"
+          type="button"
+          class="grid h-11 w-11 place-items-center rounded-xl border border-slate-200 bg-white text-ink lg:hidden"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-4 py-5 lg:hidden">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2">
+        <a href="#home" class="rounded-xl px-4 py-3 font-semibold text-ink hover:bg-mist">Home</a>
+        <a href="#services" class="rounded-xl px-4 py-3 font-semibold text-ink hover:bg-mist">Services</a>
+        <a href="#doctor" class="rounded-xl px-4 py-3 font-semibold text-ink hover:bg-mist">About Dr. Ayesha</a>
+        <a href="#testimonials" class="rounded-xl px-4 py-3 font-semibold text-ink hover:bg-mist">Testimonials</a>
+        <a
+          href="https://wa.me/923001234567?text=Hello%20Dental%20Art%20%26%20Science%2C%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-2 flex items-center justify-center gap-2 rounded-xl bg-medical px-5 py-3 font-bold text-white"
+        >
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          Book via WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-grid relative scroll-mt-24 overflow-hidden">
+      <div class="pointer-events-none absolute left-0 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-sky-200/30 blur-3xl"></div>
+      <div class="pointer-events-none absolute right-0 top-10 h-96 w-96 translate-x-1/3 rounded-full bg-teal-100/50 blur-3xl"></div>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-12 pt-16 sm:px-6 sm:pt-20 lg:grid-cols-[1.03fr_0.97fr] lg:gap-16 lg:px-8 lg:pb-16 lg:pt-24">
+        <div>
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/80 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-sky-700 shadow-sm">
+            <span class="h-2 w-2 rounded-full bg-teal animate-pulse"></span>
+            Advanced Dentistry, Thoughtfully Delivered
+          </div>
+
+          <h1 class="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-[-0.04em] text-ink sm:text-5xl lg:text-6xl">
+            Smile with Confidence.
+            <span class="block bg-gradient-to-r from-sky-600 to-teal-500 bg-clip-text text-transparent">
+              Premium Dental Care
+            </span>
+            in F-10, Islamabad.
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+            Precision-led dental care in a calm, contemporary setting—trusted by patients across Islamabad and backed by
+            <strong class="font-bold text-ink">170+ five-star reviews.</strong>
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="https://wa.me/923001234567?text=Hello%20Dental%20Art%20%26%20Science%2C%20I%20would%20like%20to%20book%20a%20consultation."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-bold text-white shadow-xl shadow-slate-900/20 transition hover:-translate-y-1 hover:bg-slate-800"
+            >
+              <i class="fa-brands fa-whatsapp text-xl text-emerald-400" aria-hidden="true"></i>
+              Book Direct via WhatsApp
+              <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="#services"
+              class="inline-flex items-center justify-center gap-3 rounded-full border border-slate-300 bg-white px-7 py-4 text-sm font-bold text-ink shadow-sm transition hover:-translate-y-1 hover:border-sky-300 hover:text-medical"
+            >
+              Explore Treatments
+              <i class="fa-solid fa-arrow-down text-xs" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-slate-500">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-teal" aria-hidden="true"></i>
+              Direct clinic booking
+            </span>
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-teal" aria-hidden="true"></i>
+              Transparent care plans
+            </span>
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-teal" aria-hidden="true"></i>
+              Modern sterilization
+            </span>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-xl lg:mx-0">
+          <div class="absolute -left-5 top-12 h-24 w-24 rounded-[2rem] bg-medical/15 blur-sm sm:-left-10"></div>
+          <div class="absolute -right-6 bottom-16 h-36 w-36 rounded-full border-[22px] border-teal-100 sm:-right-10"></div>
+
+          <div class="image-placeholder relative aspect-[4/5] overflow-hidden rounded-[2rem] border-[10px] border-white shadow-luxury sm:rounded-[2.5rem]">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/55 via-transparent to-white/10"></div>
+
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+              <div class="animate-float grid h-28 w-28 place-items-center rounded-full border border-white/80 bg-white/70 text-sky-500 shadow-xl backdrop-blur-md">
+                <i class="fa-solid fa-face-smile-beam text-5xl" aria-hidden="true"></i>
+              </div>
+              <p class="mt-5 rounded-full bg-white/75 px-5 py-2 text-xs font-bold uppercase tracking-[0.18em] text-ink backdrop-blur">
+                Premium Clinical Smiling Photo
+              </p>
+            </div>
+
+            <div class="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/30 bg-white/90 p-4 shadow-lg backdrop-blur sm:bottom-7 sm:left-7 sm:right-auto sm:max-w-xs">
+              <div class="flex items-center gap-3">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sky-100 text-medical">
+                  <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <span class="block text-sm font-extrabold text-ink">Comfort-first dentistry</span>
+                  <span class="text-xs text-slate-500">Gentle care. Clinical precision.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute -right-2 top-8 rounded-2xl border border-white/80 bg-white/90 p-4 shadow-xl backdrop-blur sm:-right-8 sm:top-16">
+            <div class="flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full bg-amber-50 text-amber-500">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </span>
+              <div>
+                <div class="font-display text-lg font-extrabold text-ink">4.9/5</div>
+                <div class="text-[11px] font-semibold text-slate-500">Patient rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12">
+        <div class="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card sm:grid-cols-3">
+          <div class="flex items-center gap-4 border-b border-slate-200 px-6 py-5 sm:border-b-0 sm:border-r">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-amber-50 text-amber-500">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </span>
+            <div>
+              <strong class="block font-display text-base font-extrabold text-ink">170+ Five-Star Reviews</strong>
+              <span class="text-xs text-slate-500">Trusted patient experiences</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 border-b border-slate-200 px-6 py-5 sm:border-b-0 sm:border-r">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-sky-50 text-medical">
+              <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+            </span>
+            <div>
+              <strong class="block font-display text-base font-extrabold text-ink">PMC Verified Specialist</strong>
+              <span class="text-xs text-slate-500">Qualified professional care</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 px-6 py-5">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-teal-50 text-teal">
+              <i class="fa-solid fa-laptop-medical" aria-hidden="true"></i>
+            </span>
+            <div>
+              <strong class="block font-display text-base font-extrabold text-ink">Modern Digital X-Ray Setup</strong>
+              <span class="text-xs text-slate-500">Accurate, efficient diagnostics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-mt-24 py-20 sm:py-24 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="text-xs font-extrabold uppercase tracking-[0.22em] text-medical">Clinical Excellence</span>
+          <h2 class="mt-4 font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl lg:text-5xl">
+            Our Specialized Treatments
+          </h2>
+          <p class="mt-5 text-base leading-7 text-slate-600 sm:text-lg">
+            Personalized treatment plans supported by modern diagnostics, meticulous technique, and a refined patient experience.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="service-card group relative rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-card">
+            <div class="relative">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky-50 text-xl text-medical transition group-hover:bg-medical group-hover:text-white">
+                <i class="fa-solid fa-teeth-open" aria-hidden="true"></i>
+              </span>
+              <h3 class="mt-6 font-display text-xl font-extrabold text-ink">Clear Aligners &amp; Orthodontics</h3>
+              <p class="mt-3 leading-7 text-slate-600">
+                Discreet, digitally planned alignment solutions designed for comfort, confidence, and predictable results.
+              </p>
+              <a href="#booking" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-medical">
+                Request a consultation
+                <i class="fa-solid fa-arrow-right text-xs transition group-hover:translate-x-1" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card group relative rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-card">
+            <div class="relative">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-teal-50 text-xl text-teal transition group-hover:bg-teal group-hover:text-white">
+                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+              </span>
+              <h3 class="mt-6 font-display text-xl font-extrabold text-ink">Dental Implants &amp; Surgery</h3>
+              <p class="mt-3 leading-7 text-slate-600">
+                Precision implant planning and surgical care focused on long-term stability, function, and natural aesthetics.
+              </p>
+              <a href="#booking" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-medical">
+                Request a consultation
+                <i class="fa-solid fa-arrow-right text-xs transition group-hover:translate-x-1" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card group relative rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-card">
+            <div class="relative">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-violet-50 text-xl text-violet-500 transition group-hover:bg-violet-500 group-hover:text-white">
+                <i class="fa-solid fa-microscope" aria-hidden="true"></i>
+              </span>
+              <h3 class="mt-6 font-display text-xl font-extrabold text-ink">Root Canal Therapy</h3>
+              <p class="mt-3 leading-7 text-slate-600">
+                Advanced endodontic treatment that relieves discomfort while preserving your natural tooth whenever possible.
+              </p>
+              <a href="#booking" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-medical">
+                Request a consultation
+                <i class="fa-solid fa-arrow-right text-xs transition group-hover:translate-x-1" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card group relative rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-card md:col-span-2 lg:col-span-3">
+            <div class="relative grid items-center gap-6 lg:grid-cols-[auto_1fr_auto]">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-amber-50 text-xl text-amber-500 transition group-hover:bg-amber-500 group-hover:text-white">
+                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+              </span>
+              <div>
+                <h3 class="font-display text-xl font-extrabold text-ink">Cosmetic Dentistry &amp; Teeth Whitening</h3>
+                <p class="mt-3 max-w-3xl leading-7 text-slate-600">
+                  Refined smile enhancements—from professional whitening to carefully planned aesthetic restorations—tailored to your features.
+                </p>
+              </div>
+              <a
+                href="#booking"
+                class="inline-flex w-fit items-center gap-2 rounded-full bg-slate-100 px-5 py-3 text-sm font-bold text-ink transition hover:bg-ink hover:text-white"
+              >
+                Enhance your smile
+                <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="doctor" class="scroll-mt-24 bg-ink py-20 text-white sm:py-24 lg:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
+        <div class="relative mx-auto w-full max-w-lg">
+          <div class="absolute -left-5 -top-5 h-full w-full rounded-[2rem] border border-sky-400/25"></div>
+
+          <div class="image-placeholder relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-sky-100/20"></div>
+
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+              <div class="grid h-32 w-32 place-items-center rounded-full border-4 border-white/70 bg-white/70 text-5xl text-sky-500 shadow-xl backdrop-blur">
+                <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+              </div>
+              <p class="mt-5 rounded-full bg-white/80 px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-ink">
+                Professional Doctor Headshot
+              </p>
+            </div>
+
+            <div class="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/15 bg-ink/75 p-5 backdrop-blur">
+              <p class="font-display text-lg font-extrabold">Dr. Ayesha Khan</p>
+              <p class="mt-1 text-sm text-sky-300">Lead Dental Surgeon &amp; Aesthetic Dentist</p>
+            </div>
+          </div>
+
+          <div class="absolute -right-3 top-10 grid h-20 w-20 place-items-center rounded-3xl bg-medical text-2xl shadow-xl shadow-sky-500/20 sm:-right-8">
+            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-[0.22em] text-sky-400">Your Smile, Expertly Considered</span>
+          <h2 class="mt-4 font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+            Meet Dr. Ayesha Khan
+          </h2>
+
+          <p class="mt-6 text-base leading-8 text-slate-300 sm:text-lg">
+            Dr. Ayesha Khan combines UK and Pakistani clinical training with a deeply personal approach to dental care. Her philosophy is simple: every patient deserves clear guidance, clinical precision, and treatment that feels calm from the first conversation.
+          </p>
+
+          <p class="mt-4 leading-8 text-slate-400">
+            With a focus on evidence-led planning and natural-looking outcomes, she leads Dental Art &amp; Science as a modern practice where advanced dentistry meets thoughtful hospitality.
+          </p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+              <i class="fa-solid fa-circle-check mt-1 text-sky-400" aria-hidden="true"></i>
+              <span class="font-semibold text-slate-200">Aesthetic &amp; Restorative Dentistry</span>
+            </div>
+            <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+              <i class="fa-solid fa-circle-check mt-1 text-sky-400" aria-hidden="true"></i>
+              <span class="font-semibold text-slate-200">Implant Treatment Planning</span>
+            </div>
+            <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+              <i class="fa-solid fa-circle-check mt-1 text-sky-400" aria-hidden="true"></i>
+              <span class="font-semibold text-slate-200">Clear Aligner Therapy</span>
+            </div>
+            <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+              <i class="fa-solid fa-circle-check mt-1 text-sky-400" aria-hidden="true"></i>
+              <span class="font-semibold text-slate-200">Advanced Endodontics</span>
+            </div>
+          </div>
+
+          <a
+            href="#booking"
+            class="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold text-ink transition hover:-translate-y-1 hover:bg-sky-50"
+          >
+            Book with Dr. Ayesha
+            <i class="fa-solid fa-arrow-right text-medical" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="scroll-mt-24 bg-slate-50 py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-[0.22em] text-medical">Patient Stories</span>
+            <h2 class="mt-4 font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+              Care patients recommend.
+            </h2>
+          </div>
+
+          <div class="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-5 py-3 shadow-sm">
+            <span class="font-display text-xl font-extrabold text-ink">4.9</span>
+            <span class="flex text-sm text-amber-400" aria-label="Five stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </span>
+            <span class="text-sm font-semibold text-slate-500">170+ reviews</span>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <div class="flex gap-1 text-xs text-amber-400" aria-hidden="true">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="mt-5 leading-7 text-slate-600">
+              “The entire experience felt calm and exceptionally professional. Every step of my treatment was explained clearly.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full bg-sky-100 font-bold text-sky-700">SA</span>
+              <span>
+                <strong class="block text-sm text-ink">Sarah A.</strong>
+                <span class="text-xs text-slate-400">Islamabad</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <div class="flex gap-1 text-xs text-amber-400" aria-hidden="true">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="mt-5 leading-7 text-slate-600">
+              “Beautiful clinic, modern equipment, and a genuinely caring team. My aligner consultation was thorough and reassuring.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full bg-teal-100 font-bold text-teal-700">HM</span>
+              <span>
+                <strong class="block text-sm text-ink">Hamza M.</strong>
+                <span class="text-xs text-slate-400">Rawalpindi</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <div class="flex gap-1 text-xs text-amber-400" aria-hidden="true">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="mt-5 leading-7 text-slate-600">
+              “Dr. Ayesha’s attention to detail is remarkable. The result looks natural, and the treatment was much easier than expected.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full bg-violet-100 font-bold text-violet-700">MK</span>
+              <span>
+                <strong class="block text-sm text-ink">Mariam K.</strong>
+                <span class="text-xs text-slate-400">Islamabad</span>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="scroll-mt-24 py-20 sm:py-24 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-[2rem] bg-ink shadow-luxury sm:rounded-[2.5rem]">
+          <div class="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-medical/20 blur-3xl"></div>
+          <div class="pointer-events-none absolute -bottom-32 left-1/4 h-80 w-80 rounded-full bg-teal/10 blur-3xl"></div>
+
+          <div class="relative grid lg:grid-cols-[0.85fr_1.15fr]">
+            <div class="p-7 text-white sm:p-10 lg:p-14">
+              <span class="text-xs font-extrabold uppercase tracking-[0.22em] text-sky-400">Direct Appointment Request</span>
+              <h2 class="mt-4 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Let’s plan your healthiest smile.
+              </h2>
+              <p class="mt-5 leading-8 text-slate-300">
+                Share a few details and begin a direct conversation with our front desk. We’ll help you select the right consultation.
+              </p>
+
+              <div class="mt-8 space-y-5">
+                <div class="flex items-start gap-4">
+                  <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-sky-400">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <strong class="block text-sm text-white">Conveniently located</strong>
+                    <span class="mt-1 block text-sm text-slate-400">F-10 Markaz, Islamabad, Pakistan</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-sky-400">
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <strong class="block text-sm text-white">Clinic hours</strong>
+                    <span class="mt-1 block text-sm text-slate-400">Monday–Saturday, 10:00 AM–8:00 PM</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-emerald-400">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <strong class="block text-sm text-white">Direct WhatsApp response</strong>
+                    <span class="mt-1 block text-sm text-slate-400">No directory app or intermediary required</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="m-3 rounded-[1.5rem] bg-white p-6 sm:m-5 sm:p-8 lg:p-10">
+              <form id="appointmentForm">
+                <div class="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label for="fullName" class="mb-2 block text-sm font-bold text-ink">Full Name</label>
+                    <input
+                      id="fullName"
+                      name="fullName"
+                      type="text"
+                      autocomplete="name"
+                      required
+                      placeholder="Your full name"
+                      class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-ink placeholder:text-slate-400 transition focus:border-medical focus:bg-white focus:outline-none focus:ring-4 focus:ring-sky-100"
+                    >
+                  </div>
+
+                  <div>
+                    <label for="phone" class="mb-2 block text-sm font-bold text-ink">Phone Number</label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      required
+                      placeholder="+92 3XX XXXXXXX"
+                      class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-ink placeholder:text-slate-400 transition focus:border-medical focus:bg-white focus:outline-none focus:ring-4 focus:ring-sky-100"
+                    >
+                  </div>
+
+                  <div>
+                    <label for="treatment" class="mb-2 block text-sm font-bold text-ink">Desired Treatment</label>
+                    <select
+                      id="treatment"
+                      name="treatment"
+                      required
+                      class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-ink transition focus:border-medical focus:bg-white focus:outline-none focus:ring-4 focus:ring-sky-100"
+                    >
+                      <option value="" disabled selected>Select a treatment</option>
+                      <option>Clear Aligners &amp; Orthodontics</option>
+                      <option>Dental Implants &amp; Surgery</option>
+                      <option>Root Canal Therapy</option>
+                      <option>Cosmetic Dentistry</option>
+                      <option>Teeth Whitening</option>
+                      <option>General Consultation</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="preferredDate" class="mb-2 block text-sm font-bold text-ink">Preferred Date</label>
+                    <input
+                      id="preferredDate"
+                      name="preferredDate"
+                      type="date"
+                      required
+                      class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-ink transition focus:border-medical focus:bg-white focus:outline-none focus:ring-4 focus:ring-sky-100"
+                    >
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="mt-6 flex w-full items-center justify-center gap-3 rounded-xl bg-medical px-6 py-4 font-bold text-white shadow-lg shadow-sky-500/20 transition hover:-translate-y-0.5 hover:bg-sky-600"
+                >
+                  <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i>
+                  Send Request Directly via WhatsApp
+                  <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                </button>
+
+                <p class="mt-4 flex items-start gap-2 text-xs leading-5 text-slate-500">
+                  <i class="fa-solid fa-shield-halved mt-0.5 text-teal" aria-hidden="true"></i>
+                  <span>
+                    Bypassing third-party directory apps. Your request goes directly to our front desk via WhatsApp.
+                  </span>
+                </p>
+
+                <p id="formStatus" class="mt-3 hidden text-center text-sm font-semibold text-teal-700" role="status"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-ink text-white">
+          <i class="fa-solid fa-tooth" aria-hidden="true"></i>
+        </span>
+        <span>
+          <strong class="block font-display text-sm text-ink">Dental Art &amp; Science</strong>
+          <span class="text-xs text-slate-400">Premium dental care in Islamabad</span>
+        </span>
+      </a>
+
+      <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-500">
+        <a href="#services" class="transition hover:text-medical">Treatments</a>
+        <a href="#doctor" class="transition hover:text-medical">Our Doctor</a>
+        <a href="#booking" class="transition hover:text-medical">Book Appointment</a>
+      </div>
+
+      <p class="text-sm text-slate-400">
+        &copy; <span id="currentYear"></span> Dental Art &amp; Science.
+      </p>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/923001234567?text=Hello%20Dental%20Art%20%26%20Science%2C%20I%20would%20like%20to%20book%20an%20appointment."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="animate-pulse-soft fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-emerald-500 text-2xl text-white shadow-xl transition hover:-translate-y-1 hover:bg-emerald-600 sm:hidden"
+    aria-label="Book an appointment through WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script>
+    (() => {
+      "use strict";
+
+      // Replace this placeholder with the clinic's complete WhatsApp number,
+      // including Pakistan's country code and without spaces or symbols.
+      const clinicWhatsAppNumber = "923001234567";
+
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIcon = menuButton.querySelector("i");
+      const form = document.getElementById("appointmentForm");
+      const preferredDate = document.getElementById("preferredDate");
+      const formStatus = document.getElementById("formStatus");
+
+      const today = new Date();
+      const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+        .toISOString()
+        .split("T")[0];
+
+      preferredDate.min = localToday;
+      document.getElementById("currentYear").textContent = today.getFullYear();
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = !mobileMenu.classList.contains("hidden");
+
+        mobileMenu.classList.toggle("hidden");
+        menuButton.setAttribute("aria-expanded", String(!isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        menuIcon.classList.toggle("fa-bars", isOpen);
+        menuIcon.classList.toggle("fa-xmark", !isOpen);
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open navigation menu");
+          menuIcon.classList.add("fa-bars");
+          menuIcon.classList.remove("fa-xmark");
+        });
+      });
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        const fullName = document.getElementById("fullName").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const treatment = document.getElementById("treatment").value;
+        const dateValue = preferredDate.value;
+
+        const formattedDate = new Intl.DateTimeFormat("en-PK", {
+          day: "numeric",
+          month: "long",
+          year: "numeric"
+        }).format(new Date(`${dateValue}T12:00:00`));
+
+        const message = [
+          "Hello Dental Art & Science,",
+          "",
+          "I would like to request an appointment.",
+          "",
+          `Name: ${fullName}`,
+          `Phone: ${phone}`,
+          `Desired treatment: ${treatment}`,
+          `Preferred date: ${formattedDate}`,
+          "",
+          "Please let me know the available appointment times. Thank you."
+        ].join("\n");
+
+        formStatus.textContent = "Opening a direct WhatsApp conversation with our front desk…";
+        formStatus.classList.remove("hidden");
+
+        const whatsappUrl = `https://wa.me/${clinicWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+        const whatsappWindow = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
+        if (!whatsappWindow) {
+          window.location.href = whatsappUrl;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
